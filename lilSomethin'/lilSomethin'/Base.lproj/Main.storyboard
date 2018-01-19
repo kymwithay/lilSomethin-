@@ -51,7 +51,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oko-ji-zvD">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oko-ji-zvD">
                                 <rect key="frame" x="189" y="84" width="155" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -70,6 +70,9 @@
                                     <segment title="15%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="XEW-lT-mG1"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhU-ai-cgC">
                                 <rect key="frame" x="28" y="84" width="61" height="21"/>
@@ -89,6 +92,7 @@
                     <navigationItem key="navigationItem" title="lilSomethin'" id="CXa-Dt-9HR"/>
                     <connections>
                         <outlet property="billField" destination="oko-ji-zvD" id="3AZ-FQ-jxN"/>
+                        <outlet property="tipControl" destination="J1A-H1-Evl" id="b8i-Y7-AsG"/>
                         <outlet property="tipLabel" destination="fzE-6F-Hy0" id="aCd-mf-EfU"/>
                         <outlet property="totalLabel" destination="0R6-Gx-RBy" id="H5c-Se-ne5"/>
                     </connections>
