@@ -77,11 +77,20 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fsH-Pm-O92" appends="YES" id="a8M-0m-Idw"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="lilSomethin'" id="CXa-Dt-9HR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fsH-Pm-O92">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="Z9I-yg-iCw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1372" y="16.641679160419791"/>
         </scene>
