@@ -56,7 +56,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="36I-Ew-bjn"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="J1A-H1-Evl">
                                 <rect key="frame" x="28" y="336" width="316" height="29"/>
@@ -84,6 +87,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="lilSomethin'" id="CXa-Dt-9HR"/>
+                    <connections>
+                        <outlet property="billField" destination="oko-ji-zvD" id="3AZ-FQ-jxN"/>
+                        <outlet property="tipLabel" destination="fzE-6F-Hy0" id="aCd-mf-EfU"/>
+                        <outlet property="totalLabel" destination="0R6-Gx-RBy" id="H5c-Se-ne5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="fsH-Pm-O92">
