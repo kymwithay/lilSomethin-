@@ -1,4 +1,4 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *LilSomethin'*
 
 **lil somethin'** is a tip calculator application for iOS.
 
